@@ -1,0 +1,124 @@
+
+{% extends "layout.html" %}
+
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+{% include "includes/header-home-current-self-study.html" %}
+{% endblock %}
+
+{% block content %}
+
+{{ govukBackLink({
+text: "Back",
+href: "/ect-self-study-session"
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Quiz: Addressing persistent and challenging behaviour
+      </h1>
+
+      <h3 class="govuk-heading-m">
+        What reasons might a pupil be off task, despite clear instructions and modelling?
+      </h3>
+      <div id="waste-hint" class="govuk-hint">
+        Select the correct answer(s).
+      </div>
+      {{ govukCheckboxes({
+        idPrefix: "waste",
+        name: "waste",
+        items: [
+          {
+            value: "",
+            text: "The pupil is struggling with self-regulation."
+          },
+          {
+            value: "",
+            text: "The pupil is confident with the instructions."
+          },
+          {
+            value: "",
+            text: "The pupil is worried they will not be successful at the task."
+          },
+          {
+            value: "",
+            text: "The pupil is confident with the task.."
+          }
+        ]
+      }) }}
+
+      <h3 class="govuk-heading-m">
+        What is an example of positive framing?
+      </h3>
+      <div id="waste-hint" class="govuk-hint">
+        Select the correct answer(s).
+      </div>
+      {{ govukCheckboxes({
+        idPrefix: "waste",
+        name: "waste",
+        items: [
+          {
+            value: "",
+            text: "“I can see the blue table has all their pens out.”"
+          },
+          {
+            value: "",
+            text: "“I have nearly 100% of the class there.”"
+          },
+          {
+            value: "",
+            text: "We should all be sat with our legs crossed."
+          },
+          {
+            value: "",
+            text: "The blue table isn’t quite there yet."
+          }
+        ]
+      }) }}
+
+      <h3 class="govuk-heading-m">
+        Which of the following corrections is positively framed?
+      </h3>
+      <div id="waste-hint" class="govuk-hint">
+        Select the correct answer(s).
+      </div>
+      {{ govukCheckboxes({
+        idPrefix: "waste",
+        name: "waste",
+        items: [
+          {
+            value: "",
+            text: "“Why have the back row not got their pens out?”"
+          },
+          {
+            value: "",
+            text: "“I am still waiting as people are not following my instructions.”"
+          },
+          {
+            value: "",
+            text: "Pens down, eyes on me."
+          },
+          {
+            value: "",
+            text: "Everybody should have their book open on page 13 with their finder points on the first work, ready for reading"
+          }
+        ]
+      }) }}
+
+      {{ govukButton({
+        text: "Check your answers",
+        href: "/ect-self-study-quiz-answers"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

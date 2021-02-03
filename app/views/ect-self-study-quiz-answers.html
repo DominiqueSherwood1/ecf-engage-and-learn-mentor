@@ -1,0 +1,195 @@
+
+{% extends "layout.html" %}
+
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+{% include "includes/header-home-current-self-study.html" %}
+{% endblock %}
+
+{% block content %}
+
+
+{{ govukBackLink({
+text: "Back",
+href: "/ect-self-study-session"
+}) }}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Quiz: Addressing persistent and challenging behaviour
+      </h1>
+
+      <p class="grey-background results">
+        <strong>Results:</strong> You answered 1 question correctly, and 1 question wrong
+      </p>
+
+      <h3 class="govuk-heading-m">
+        What reasons might a pupil be off task, despite clear instructions and modelling?
+      </h3>
+      <div id="waste-hint" class="govuk-hint">
+        Select the correct answer(s).
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+          <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/tick.png" alt="Your answer was correct">
+        </div>
+        <div class="govuk-!-display-inline-block">
+          <p class="govuk-hint answer-label">Correct answer:</p>
+          <p>The pupil is struggling with self-regulation.</p>
+        </div>
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+          <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/cross.png" alt="Your answer was incorrect">
+        </div>
+        <div class="govuk-!-display-inline-block">
+          <p class="govuk-hint answer-label">Wrong answer:</p>
+          <p>The pupil is confident with the instructions.</p>
+        </div>
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+        </div>
+        <div>
+          <div class="govuk-!-display-inline-block" style="width: 50px;">
+            <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/tick.png" alt="Your answer was correct">
+          </div>
+          <div class="govuk-!-display-inline-block">
+            <p class="govuk-hint answer-label">Correct answer:</p>
+            <p>The pupil is worried they will not be successful at the task.</p>
+          </div>
+        </div>
+        <div>
+          <div class="govuk-!-display-inline-block" style="width: 50px;">
+            <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/cross.png" alt="Your answer was incorrect">
+          </div>
+          <div class="govuk-!-display-inline-block">
+            <p class="govuk-hint answer-label">Wrong answer:</p>
+            <p>The pupil is confident with the task.</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h3 class="govuk-heading-m">
+        What is an example of positive framing?
+      </h3>
+      <div id="waste-hint" class="govuk-hint">
+        Select the correct answer(s).
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+          <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/tick.png" alt="Your answer was correct">
+        </div>
+        <div class="govuk-!-display-inline-block">
+          <p class="govuk-hint answer-label">Correct answer:</p>
+          <p>“I can see the blue table has all their pens out.”</p>
+        </div>
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+          <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/cross.png" alt="Your answer was incorrect">
+        </div>
+        <div class="govuk-!-display-inline-block">
+          <p class="govuk-hint answer-label">Wrong answer:</p>
+          <p>“I have nearly 100% of the class there.”</p>
+        </div>
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+        </div>
+        <div>
+          <div class="govuk-!-display-inline-block" style="width: 50px;">
+            <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/tick.png" alt="Your answer was correct">
+          </div>
+          <div class="govuk-!-display-inline-block">
+            <p class="govuk-hint answer-label">Correct answer:</p>
+            <p>"We should all be sat with our legs crossed."</p>
+          </div>
+        </div>
+        <div>
+          <div class="govuk-!-display-inline-block" style="width: 50px;">
+            <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/cross.png" alt="Your answer was incorrect">
+          </div>
+          <div class="govuk-!-display-inline-block">
+            <p class="govuk-hint answer-label">Wrong answer:</p>
+            <p>"The blue table isn’t quite there yet."</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <h3 class="govuk-heading-m">
+        Which of the following corrections is positively framed?
+      </h3>
+      <div id="waste-hint" class="govuk-hint">
+        Select the correct answer(s).
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+          <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/tick.png" alt="Your answer was correct">
+        </div>
+        <div class="govuk-!-display-inline-block">
+          <p class="govuk-hint answer-label">Correct answer:</p>
+          <p>“Why have the back row not got their pens out?”</p>
+        </div>
+      </div>
+      <div>
+        <div class="govuk-!-display-inline-block" style="width: 50px;">
+          <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/cross.png" alt="Your answer was incorrect">
+        </div>
+        <div class="govuk-!-display-inline-block">
+          <p class="govuk-hint answer-label">Wrong answer:</p>
+          <p>“I am still waiting as people are not following my instructions.”</p>
+        </div>
+      </div>
+      <div>
+
+        <div>
+          <div class="govuk-!-display-inline-block" style="width: 50px;">
+            <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/tick.png" alt="Your answer was correct">
+          </div>
+          <div class="govuk-!-display-inline-block">
+            <p class="govuk-hint answer-label">Correct answer:</p>
+            <p>"Pens down, eyes on me."</p>
+          </div>
+        </div>
+        <div>
+          <div class="govuk-!-display-inline-block" style="width: 50px;">
+            <img height=30 src="https://www.early-career-framework.education.gov.uk/ambition/wp-content/themes/early-career-framework/static/img/cross.png" alt="Your answer was incorrect">
+          </div>
+          <div class="govuk-!-display-inline-block">
+            <p class="govuk-hint answer-label">Wrong answer:</p>
+            <p>"Everybody should have their book open on page 13 with their<br> finder points on the first work, ready for reading"</p>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+
+      {{ govukButton({
+        text: "Take again",
+        classes: "govuk-button--secondary",
+        href: "/ect-self-study-quiz"
+      }) }}
+
+      {{ govukButton({
+        text: "Back to session",
+        href: "/ect-self-study-session"
+      }) }}
+
+    </div>
+  </div>
+
+{% endblock %}

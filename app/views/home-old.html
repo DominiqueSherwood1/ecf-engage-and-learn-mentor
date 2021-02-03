@@ -1,0 +1,77 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+{% include "includes/header-home-current-first.html" %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+<br>
+
+      <ol class="app-task-list">
+        <li>
+          <h1 class="govuk-heading-xl">
+            Autumn term
+          </h1>
+          <p>
+            This is what you'll study during the first half-term of your induction. The topics are broken down into sessions taking between 30 minutes and 1 hour 30 minutes to complete.
+          </p>
+          <h2 class="govuk-heading-l">
+            First half term
+          </h2>
+          <h3 class="govuk-heading-m">
+            How do pupils learn?
+          </h3>
+          <p>
+          During the spring term you’ll focus on how pupils learn effectively and how this can positively impact your teaching.
+          </p>
+          <p>
+            <a href="">
+              What you will learn with video introduction
+            </a>
+          </p>
+
+          <p><strong>Topic materials</strong></p>
+
+
+
+
+          <ul class="app-task-list__items">
+            {% set session_list_emement_title = "The working and long-term memory (55 mins)" %}
+            {% include "includes/session-list-element-not-started.html" %}
+
+            {% set session_list_emement_title = "Considering how to introduce new knowledge to pupils (60 mins)" %}
+            {% include "includes/session-list-element-not-started.html" %}
+
+            {% set session_list_emement_title = "Using worked and partially completed examples (45 mins)" %}
+            {% include "includes/session-list-element-not-started.html" %}
+
+            {% set session_list_emement_title = "Part 1- Helping pupils remember (25 mins)" %}
+            {% include "includes/session-list-element-not-started.html" %}
+
+            {% set session_list_emement_title = "Part 2- Helping pupils remember (55 mins)" %}
+            {% include "includes/session-list-element-not-started.html" %}
+
+            {% set session_list_emement_title = "Introduction to metacognition (15 minutes)" %}
+            {% include "includes/session-list-element-not-started.html" %}
+
+
+          </ul>
+        </li>
+      </ol>
+
+      <p><a href="/index">Back to landing page</a></p>
+    </div>
+  </div>
+
+{% endblock %}

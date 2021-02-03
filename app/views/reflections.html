@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+
+<form class="form" action="/teacher" method="post">
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    {{ govukBackLink({
+      text: "Back to teacher",
+      href: "/teacher"
+    }) }}
+
+<br>
+
+<p class="govuk-body govuk-!-font-size-36"><strong>Reflections</strong></p>
+
+<p>Whilst reading the self study content for <a href="/ect-self-study-session">Session 3: blah blah blah </a>Your teacher was asked to reflect on a time when they intervened with an off-task pupil to correct their behaviour.</p>
+<br>
+
+<h3 class="govuk-heading-m">Did you use the least invasive intervention possible?</h3>
+
+<div class="govuk-inset-text">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+
+<p><a href="#">Add comment</a></p>
+
+<h3 class="govuk-heading-m">How did this impact the pupil?</h3>
+
+<div class="govuk-inset-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas sed tempus urna et pharetra. Vitae ultricies leo integer malesuada nunc. Eu nisl nunc mi ipsum faucibus vitae. Libero justo laoreet sit amet. Lectus mauris ultrices eros in cursus turpis. Nisi est sit amet facilisis magna etiam tempor. Gravida cum sociis natoque penatibus et magnis. Cursus turpis massa tincidunt dui ut ornare lectus sit. Tempus urna et pharetra pharetra massa massa ultricies. Suspendisse sed nisi lacus.
+</div>
+
+<p><a href="#">Add comment</a></p>
+
+<h3 class="govuk-heading-m">How did it impact the class and their learning?</h3>
+
+<div class="govuk-inset-text">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Turpis egestas sed tempus urna et pharetra. Vitae ultricies leo integer malesuada nunc. Eu nisl nunc mi ipsum faucibus vitae. Libero justo laoreet sit amet. Lectus mauris ultrices eros in cursus turpis. Nisi est sit amet facilisis magna etiam tempor. Gravida cum sociis natoque penatibus et magnis. Cursus turpis massa tincidunt dui ut ornare lectus sit. Tempus urna et pharetra pharetra massa massa ultricies. Mattis enim ut tellus elementum sagittis vitae. Purus faucibus ornare suspendisse sed nisi lacus.
+</div>
+
+<p><a href="#">Add comment</a></p>
+
+<h3 class="govuk-heading-m">What could you do differently next time?</h3>
+
+<div class="govuk-inset-text">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Add comment
+
+    </span>
+  </summary>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+</details>
+
+<h3 class="govuk-heading-m">Write down any additional  questions or discussion pointsthat you want to raise with your mentor</h3>
+
+<div class="govuk-inset-text">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</div>
+
+<details class="govuk-details" data-module="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Add comment
+
+    </span>
+  </summary>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+</details>
+
+</div>
+
+</div>
+
+<button class="govuk-button" data-module="govuk-button">Save comments</button>
+
+</form>
+
+{% endblock %}

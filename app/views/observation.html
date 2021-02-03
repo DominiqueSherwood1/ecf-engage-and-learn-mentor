@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    {{ govukBackLink({
+      text: "Back to teacher",
+      href: "/teacher"
+    }) }}
+
+<br>
+
+<p class="govuk-body govuk-!-font-size-36"><strong>Observations</strong></p>
+
+<p class="govuk-body">Observe your teacher using positive and least invasive behaviour
+management strategies such as:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>non-verbal intervention</li>
+  <li>positive group correction</li>
+  <li>anonymous individual correction</li>
+  <li>private individual correction</li>
+  <li> private individual praise</li>
+  <li>lighting quick public correction</li>
+</ul>
+
+<form class="form" action="/teacher" method="post">
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="more-detail">
+      <strong>Write down examples of when your teacher has shown examples of the above</strong>
+    </label>
+    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="more-detail">
+      <strong>What was your teacher’s previous target? Are they meeting it? How do you know?</strong>
+    </label>
+    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+  </div>
+
+  <button class="govuk-button" data-module="govuk-button">Save comments</button>
+
+</form>
+
+
+
+
+
+
+</div>
+
+</div>
+
+
+
+{% endblock %}

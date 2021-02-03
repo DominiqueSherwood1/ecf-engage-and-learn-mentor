@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    {{ govukBackLink({
+      text: "Back to teacher",
+      href: "/teacher"
+    }) }}
+
+<br>
+
+<p class="govuk-body govuk-!-font-size-36"><strong>Feedback and Discussion</strong></p>
+</div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+<p>Discussion points</p>
+
+<ol class="govuk-list govuk-list--number">
+  <li>Why is it important to manage behaviour in a positive and least invasive way?</li>
+  <li>What should you do if you are feeling very agitated by a pupil in your class? How can this negatively impact upon your behaviour management strategies? What can you do to help you control your emotions in these situations?</li>
+  <li>Discuss possible behaviour management strategies alongside the school’s behaviour policy i.e. how to respond to behaviour or bullying that threatens emotional safety.</li>
+  <li>Why is it important to manage behaviour in a positive and least invasive way?</li>
+  <li>Discuss with teachers that they have the right to support and if they are finding behaviour challenging, they should seek support from colleagues.</li>
+</ol>
+
+<form class="form" action="/teacher" method="post">
+
+  <div class="govuk-form-group">
+    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="more-detail">
+      <strong>With your teacher, set a target for them to practice in their next lesson</strong>
+    </label>
+    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5"></textarea>
+  </div>
+
+  <button class="govuk-button" data-module="govuk-button">Save comments</button>
+
+</form>
+
+
+
+
+
+
+</div>
+<div class="govuk-grid-column-one-third-from-desktop">
+  <div style="background-color:#F3F2F1; padding: 10px;">
+    <h4 class="govuk-heading-s">Relevant links</h4>
+
+    <ul class="govuk-list">
+  <li><a href="/reflections">Teacher's reflections</a></li>
+  <li><a href="/observation">Observation notes</a></li>
+  </ul>
+
+  </div>
+</div>
+</div>
+</div>
+
+
+
+{% endblock %}
