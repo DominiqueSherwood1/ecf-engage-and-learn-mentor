@@ -4,7 +4,7 @@
   list-style-type: none;
   padding-left: 0;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10;
   @include govuk-media-query($from: tablet) {
     min-width: 550px;
   }
@@ -19,14 +19,14 @@
   display: table-cell;
 
   @include govuk-media-query($from: tablet) {
-    min-width: govuk-spacing(6);
+    min-width: govuk-spacing(2);
     padding-right: 0;
   }
 }
 
 .app-task-list__items {
   @include govuk-font($size: 19);
-  @include govuk-responsive-margin(9, "bottom");
+  @include govuk-responsive-margin(9,4);
   list-style: none;
   padding-left: 0;
   @include govuk-media-query($from: tablet) {
