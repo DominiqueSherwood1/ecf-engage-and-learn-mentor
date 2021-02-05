@@ -14,15 +14,27 @@
 
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      {{ govukBackLink({
-        text: "Back to teacher",
-        href: "/teacher"
-      }) }}
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/teacher-term">Mrs Teacher</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/teacher">First half term - How do pupil's learn?</a>
+    </li>
+  </ol>
+</div>
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
 
 <br>
-      <p>First half term - How can you create an effective learning environment?</p>
+<p><strong>Topic 3: Establishing effective routine</strong></p>
 
       <h1 class="govuk-heading-xl">
         Addressing low-level behaviour
