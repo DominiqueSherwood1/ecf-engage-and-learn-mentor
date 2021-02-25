@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% from "govuk/components/breadcrumbs/macro.njk" import govukBreadcrumbs %}
+
+{% block pageTitle %}
+  Teacher progress
+{% endblock %}
+
+{% block content %}
+{{ govukBreadcrumbs({
+  items: [
+    {
+      text: "Home",
+      href: "./dashboard"
+    },
+    {
+      text: "Joe Bloggs",
+      href: "#"
+    }
+  ]
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <br>
+
+    <h1 class="govuk-heading-xl">Half Term 1: Name of module</h1>
+
+    <h2 class="govuk-heading-l">Joe's self study progress</h2>
+
+    <ul class="app-task-list__items" style="padding-left: 0">
+      <li class="app-task-list__item">
+        <span class="app-task-list__task-name">
+          <a href="#" aria-describedby="eligibility-status">
+            Week 1: Module Introduction
+          </a>
+        </span>
+        <strong class="govuk-tag govuk-tag--green" style="float: right">Complete</strong>
+      </li>
+      <li class="app-task-list__item">
+        <span class="app-task-list__task-name">
+          <a href="#" aria-describedby="eligibility-status">
+            Week 1: Name of session/lesson/week
+          </a>
+        </span>
+        <strong class="govuk-tag govuk-tag--green" style="float: right">Complete</strong>
+      </li>
+      <li class="app-task-list__item">
+        <span>
+          <a href="#" aria-describedby="eligibility-status">
+            Week 2: Name of session/lesson/week
+          </a>
+        </span>
+        <strong class="govuk-tag govuk-tag--orange" style="float: right">Discussion needed</strong>
+      </li>
+      <li class="app-task-list__item">
+        <span class="app-task-list__task-name">
+          <a href="#" aria-describedby="eligibility-status">
+            Week 3: Name of session/lesson/week
+          </a>
+        </span>
+        <strong class="govuk-tag govuk-tag--yellow" style="float: right">In progress</strong>
+      </li>
+      <li class="app-task-list__item">
+        <span class="app-task-list__task-name">
+          <a href="#" aria-describedby="eligibility-status">
+            Week 4: Name of session/lesson/week
+          </a>
+        </span>
+        <strong class="govuk-tag govuk-tag--grey" style="float: right">Not started</strong>
+      </li>
+      <li class="app-task-list__item">
+        <span class="app-task-list__task-name">
+          <a href="#" aria-describedby="eligibility-status">
+            Week 5: Name of session/lesson/week
+          </a>
+        </span>
+        <strong class="govuk-tag govuk-tag--grey" style="float: right">Not started</strong>
+      </li>
+      <li class="app-task-list__item">
+        <span class="app-task-list__task-name">
+          <a href="#" aria-describedby="eligibility-status">
+            Week 6: Name of session/lesson/week
+          </a>
+        </span>
+        <strong class="govuk-tag govuk-tag--grey" style="float: right">Not started</strong>
+      </li>
+    </ul>
+  </div>
+</div>
+
+{% endblock %}
