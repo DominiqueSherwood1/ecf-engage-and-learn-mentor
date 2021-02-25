@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% from "./_macros.html" import demoText %}
+
+{% block pageTitle %}
+  Teacher
+{% endblock %}
+
+{% block content %}
+
+<a href="#" class="govuk-back-link">Back</a>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <br>
+
+    <h1 class="govuk-heading-xl">Joe Bloggs</h1>
+
+    <h2 class="govuk-heading-l">Year 1</h2>
+
+    <h2 class="govuk-heading-l">Autumn Term</h2>
+
+    <h3 class="govuk-heading-m">Half Term 1: Name of module</h3>
+
+    {{ demoText(2) }}
+
+    <p class="govuk-body-l">
+      <a class="govuk-link" href="./teacher-progress">Joe's progress</a>
+      <br>
+      <a class="govuk-link" href="./meetings-and-interactions">Meetings and Interactions</a>
+    </p>
+
+    <h3 class="govuk-heading-m">Half Term 2: Name of module</h3>
+
+    {{ demoText(2) }}
+
+    <p class="govuk-body-l">
+      <a class="govuk-link" href="./teacher-progress">Joe's progress</a>
+      <br>
+      <a class="govuk-link" href="./meetings-and-interactions">Meetings and Interactions</a>
+    </p>
+
+    <h2 class="govuk-heading-l">Spring Term</h2>
+
+    <h3 class="govuk-heading-m">Half Term 1: Name of module</h3>
+
+    {{ demoText(2) }}
+
+    <p class="govuk-body-l">
+      <a class="govuk-link" href="./teacher-progress">Joe's progress</a>
+      <br>
+      <a class="govuk-link" href="./meetings-and-interactions">Meetings and Interactions</a>
+    </p>
+
+    <h3 class="govuk-heading-m">Half Term 2: Name of module</h3>
+
+    {{ demoText(2) }}
+
+    <p class="govuk-body-l">
+      <a class="govuk-link" href="./teacher-progress">Joe's progress</a>
+      <br>
+      <a class="govuk-link" href="./meetings-and-interactions">Meetings and Interactions</a>
+    </p>
+
+    <h2 class="govuk-heading-l">Summer Term</h2>
+
+    <h3 class="govuk-heading-m">Half Term 1: Name of module</h3>
+
+    {{ demoText(2) }}
+
+    <p class="govuk-body-l">
+      <a class="govuk-link" href="./teacher-progress">Joe's progress</a>
+      <br>
+      <a class="govuk-link" href="./meetings-and-interactions">Meetings and Interactions</a>
+    </p>
+
+    <h3 class="govuk-heading-m">Half Term 2: Name of module</h3>
+
+    {{ demoText(2) }}
+
+    <p class="govuk-body-l">
+      <a class="govuk-link" href="./teacher-progress">Joe's progress</a>
+      <br>
+      <a class="govuk-link" href="./meetings-and-interactions">Meetings and Interactions</a>
+    </p>
+
+  </div>
+</div>
+
+{% endblock %}
