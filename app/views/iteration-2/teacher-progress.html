@@ -6,18 +6,17 @@
 {% endblock %}
 
 {% block content %}
-{{ govukBreadcrumbs({
-  items: [
-    {
-      text: "Home",
-      href: "./dashboard"
-    },
-    {
-      text: "Joe Bloggs",
-      href: "#"
-    }
-  ]
-}) }}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/iteration-2/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/iteration-2/teacher">Joe Bloggs</a>
+    </li>
+  </ol>
+</div>
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
@@ -46,7 +45,7 @@
         <span>
             Week 2: Name of session/lesson/week
         </span>
-        <strong class="govuk-tag govuk-tag--orange" style="float: right">Discussion needed</strong>
+        <strong class="govuk-tag govuk-tag--purple" style="float: right">Discussion needed</strong>
       </li>
       <li class="app-task-list__item">
         <span class="app-task-list__task-name">
