@@ -1,0 +1,173 @@
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/it3/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/it3/teacher">Joe Bloggs</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/it3/meetings-and-interactions">Materials for your weekly meeting </a>
+    </li>
+  </ol>
+</div>
+
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <br>
+    <h1 class="govuk-heading-xl">
+      Week 4 - Managing behaviour
+    </h1>
+
+    <!-- Session Overview -->
+
+    <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-2">Contents</p>
+
+    <ul class="govuk-list">
+      <li>
+        – <a class="govuk-link" href="/it3/activities-wk4-pt1">Review (5 minutes)</a>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/it3/activities-wk4-pt2">Plan (10 minutes)</a>
+      </li>
+      <li>
+        – <span>Theory to practice (35 minutes)</span>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/it3/activities-wk4-pt4">Next steps (5 minutes)</a>
+      </li>
+    </ul>
+
+    <h3 class="govuk-heading-m">
+      Theory into practice (35 minutes)
+    </h3>
+
+    <h4 class="govuk-heading-s">
+      Analyse artefacts/discuss with teacher
+    </h4>
+
+    {% include "includes/paragraph.html" %}
+
+    <h4 class="govuk-heading-s">
+      Discuss next week's observation
+    </h4>
+
+    <p>Module 1 has introduced a range of approaches to behaviour management, many of which your mentee will now have put into practice.</p>
+
+    <p>As part of next week’s ECT mentor meeting, you will observe your mentee using some of these approaches.</p>
+
+    <p>Based on your mentee’s development needs and the challenges they are currently experiencing with their pupils, agree with your mentee which class you will observe
+      and the focus of this observation.</p>
+    <p>The observation is allocated 20 minutes of your meeting time for the week.</p>
+
+    <p>Use the notes made by your mentee in their self-study session and the outcomes of
+      the first activity in this session as a starting point for some collaborative planning.</p>
+
+    <p>Work with your mentee to plan how they will incorporate into their teaching, in the
+      coming week, strategies for developing pupils’ resilience, self-regulation and
+      motivation. </p>
+
+    <div
+    <div style="background-color:#F3F2F1; padding: 16px;">
+      <p>Agree with your mentee:</p>
+      <ol class="govuk-list govuk-list--number">
+
+        <li>which lesson you will observe</li>
+        <li>the focus of your observation, drawn from one or more of the sessions
+          for Module 1</li>
+        <li>the success criteria for this observation, contextualised for your
+          mentee’s stage of development and the characteristics of their pupils</li>
+      </ol>
+    </div>
+  </div>
+
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    {% from "govuk/components/inset-text/macro.njk" import govukInsetText %}
+
+  {{ govukInsetText({
+    text: "Note: this observation should not form part of your school’s performance
+  management process or NQT statutory induction. To clearly differentiate this
+  developmental observation from these formal processes you may wish to
+  record your observation notes on paperwork not associated with these
+  processes."
+  }) }}
+
+<h4 class="govuk-heading-s govuk-!-margin-top-6">
+  Collaborative planning
+</h4>
+
+<p>Spend some time with your mentee planning their lesson for the agreed observation
+  next week. Make use of research and practice summaries from previous weeks in
+  this module, as appropriate, to stimulate ideas for the lesson. You might also use
+  scripting and/or rehearsal if this suits your mentee’s needs.</p>
+
+
+<nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="gem-c-pagination__list" data-module="track-click">
+    <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+      <a href="/it3/activities-wk4-pt2" class="gem-c-pagination__link" rel="next">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+            <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Previous
+          </span>
+        </span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">Plan (10 minutes)</span>
+      </a>
+    </li>
+    <li class="gem-c-pagination__item gem-c-pagination__item--next">
+      <a href="/it3/activities-wk4-pt4" class="gem-c-pagination__link" rel="next">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+            <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Next
+          </span>
+        </span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">Next steps (5 minutes)</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+
+
+{% endblock %}

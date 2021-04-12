@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block navigation %}
+<div class="govuk-width-container {{mainClasses}} govuk-grid-row blue-background govuk-!-margin-bottom-6">
+  <div class="govuk-grid-column-two-thirds">
+    <div class="flex-wrapper">
+      <h1 class="govuk-heading-xl white-text govuk-!-margin-bottom-0 govuk-!-margin-top-5">Welcome {{ data['username'] }}</h1>
+    </div>
+    <p class="govuk-!-margin-top-1 govuk-!-margin-bottom-9 govuk-body govuk-!-font-size-16"><a href="/dev/change-username" class="white-text bold">Edit username</a></p>
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-half-from-desktop">
+    <div style="background-color:#F3F2F1; padding: 10px;">
+      <h3 class="govuk-heading-m  govuk-!-margin-bottom-9"><a href="/it3/module-list"><strong>Your mentor materials</strong></a></h3>
+      <p></p>
+    </div>
+  </div>
+  <div class="govuk-grid-column-one-half-from-desktop">
+    <div style="background-color:#F3F2F1; padding: 10px;">
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-9"><a href="/it3/your-teachers"><strong>Your teachers</strong></a></h3>
+      <p></p>
+    </div>
+  </div>
+</div>
+
+<h3 class="govuk-heading-m govuk-!-margin-top-9">Related content</h3>
+
+<p><a href="#">Guidance about training and support during your mentees induction</a></p>
+
+<p><a href="#">How the teacher standards relate to the ECF</a></p>
+
+<p><a href="#">Your role and responsibilities as a mentor</a></p>
+
+<p><a href="#">Get support with using the platform</a></p>
+{% endblock %}
