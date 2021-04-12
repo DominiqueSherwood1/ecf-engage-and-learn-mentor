@@ -1,7 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
-router.post('/guidance-question-answer', function (req, res) {
+router.post('/it3/guidance-question-answer', function (req, res) {
   const readGuidance = req.session.data['read-guidance']
 
   if (readGuidance === "yes") {
