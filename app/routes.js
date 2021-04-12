@@ -1,13 +1,23 @@
 const express = require('express')
 const router = express.Router()
 
-router.post('/it4/mentor-time-answer', function (req, res) {
-  const finishSession = req.session.data['mentor-time']
+router.post('/it3/mentor-time-answer', function (req, res) {
+  const meetingDone = req.session.data['meeting-done']
 
-  if (finishSession === "yes") {
+  if (meetingDone === "yes") {
     res.redirect('/it3/abi-week-complete')
-  } else if (mentorTime === "no") {
+  } else if (meetingDone === "no") {
     res.redirect('/it3/abi-week-todo')
+  }
+})
+
+router.post('/it3/goal-answer', function (req, res) {
+  const goalAchieved = req.session.data['goal-achieved']
+
+  if (goalAchieved === "inprogress") {
+    res.redirect('/it3/abi-week-complete-inprogress')
+  } else if (goalAchieved === "complete") {
+    res.redirect('/it3/abi-week-complete-complete')
   }
 })
 
