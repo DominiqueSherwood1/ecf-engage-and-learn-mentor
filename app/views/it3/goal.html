@@ -18,49 +18,50 @@ GOV.UK Prototype Kit
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
+<h1 class="govuk-heading-l">Abi's goal</h1>
 
     <form class="form" action="/it3/abi-week" method="post">
 
       <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-        <h1 class="govuk-fieldset__heading">
-          Has Abi achieved her goal set for this week?
-        </h1>
-      </legend>
-      <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
-          <label class="govuk-label govuk-radios__label" for="contact">
-            Yes
-          </label>
-        </div>
-        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="contact-by-email">
-              No
-            </label>
-            <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false">
-          </div>
-        </div>
-        <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
-          <label class="govuk-label govuk-radios__label" for="contact-3">
-            No
-          </label>
-        </div>
-        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
-          <div class="govuk-form-group">
-            <label class="govuk-label" for="contact-by-text">
-              Mobile phone number
-            </label>
-            <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel"></div>
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+      What is Abi's goal for this week?
+    </label>
+  </h1>
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+</div>
 
-        </div>
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+      <h1 class="govuk-fieldset__heading">
+        Has Abi achieved her goal set for this week?
+      </h1>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Abi has not started this goal
+        </label>
       </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+          Abi is working on this goal
+        </label>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Abi has achieved this goal
+        </label>
+      </div>
+    </div>
 
-    </fieldset>
-  </div>
+  </fieldset>
+</div>
+
+
 
       <button class="govuk-button" data-module="govuk-button">Save</button>
 
