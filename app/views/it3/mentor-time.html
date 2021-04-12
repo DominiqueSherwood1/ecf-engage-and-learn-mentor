@@ -6,20 +6,14 @@ GOV.UK Prototype Kit
 
 {% block content %}
 
-<div class="govuk-breadcrumbs ">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/it3/home">Home</a>
-    </li>
-  </ol>
-</div>
+<a href="/it3/abi-week" class="govuk-back-link">Back</a>
 
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
 
-    <form class="form" action="/it3/abi-week" method="post">
+    <form class="form" action="/it3/mentor-time-answer" method="post">
 
       <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
@@ -30,14 +24,14 @@ GOV.UK Prototype Kit
     </legend>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+        <input class="govuk-radios__input" id="mentor-time" name="mentor-time" type="radio" value="yes">
+        <label class="govuk-label govuk-radios__label" for="mentor-time">
           Yes
         </label>
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+        <input class="govuk-radios__input" id="mentor-time-2" name="mentor-time" type="radio" value="no">
+        <label class="govuk-label govuk-radios__label" for="mentor-time-2">
           No
         </label>
       </div>

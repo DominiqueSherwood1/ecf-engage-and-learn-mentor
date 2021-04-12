@@ -1,6 +1,16 @@
 const express = require('express')
 const router = express.Router()
 
+router.post('/it4/mentor-time-answer', function (req, res) {
+  const finishSession = req.session.data['mentor-time']
+
+  if (finishSession === "yes") {
+    res.redirect('/it3/abi-week-complete')
+  } else if (mentorTime === "no") {
+    res.redirect('/it3/abi-week-todo')
+  }
+})
+
 router.post('/it3/guidance-question-answer', function (req, res) {
   const readGuidance = req.session.data['read-guidance']
 

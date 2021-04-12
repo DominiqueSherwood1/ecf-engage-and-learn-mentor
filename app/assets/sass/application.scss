@@ -24,6 +24,19 @@ $navigation-height: 50px;
 .grey-background {
   background-color: govuk-colour("light-grey");
 }
+
+.blue-background {
+  background-color: govuk-colour("dark-blue");
+}
+
+.white-text {
+  color: govuk-colour("white") !important;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 .results{
   padding: 20px 0 20px 10px;
 }
@@ -178,4 +191,9 @@ $navigation-height: 50px;
   @include govuk-media-query($from: tablet) {
     margin-left: govuk-spacing(6);
   }
+}
+
+.flex-wrapper {
+  display: flex;
+  align-items: flex-end;
 }
