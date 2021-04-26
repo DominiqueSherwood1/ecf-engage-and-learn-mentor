@@ -1,0 +1,107 @@
+
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/it4/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/it4/module-list">Your mentor materials</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/it4/meetings-and-interactions">First half term - enabling pupil learning</a>
+    </li>
+  </ol>
+</div>
+
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+<br>
+<span class="govuk-caption-xl">Discussion guide for your weekly meeting</span>
+<h1 class="govuk-heading-xl">
+    Week 4 - Managing behaviour
+</h1>
+
+      <!-- Session Overview -->
+
+<p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-2">Contents</p>
+      <ul class="govuk-list">
+      <li>
+        – <a class="govuk-link" href="/it4/activities-wk4-pt1">Review</a>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/it4/activities-wk4-pt2">Plan</a>
+      </li>
+      <li>
+        <li>
+          – <a class="govuk-link" href="/it4/activities-wk4-pt3">Theory to practice</a>
+        </li>
+      <li>
+        – <span>Next steps</span>
+      </li>
+      </ul>
+
+      <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+      <h2 class="govuk-heading-l">
+        Next Steps
+      </h2>
+
+<p>As your mentee is preparing for the developmental observation as part of next
+week’s ECT mentor meeting, there is no need to set further actions arising from this
+week’s session.</p>
+
+<p>Note the date of your next mentor meeting. There is no ECT self-study in week 5.</p>
+
+
+
+
+
+
+      <nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="gem-c-pagination__list" data-module="track-click">
+    <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+        <a href="/it4/activities-wk4-pt3" class="gem-c-pagination__link" rel="next">
+          <span class="gem-c-pagination__link-title">
+            <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            <span class="gem-c-pagination__link-text">
+              Previous
+            </span>
+          </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">Theory into practice</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+      </div>
+      </div>
+
+
+
+
+
+{% endblock %}
