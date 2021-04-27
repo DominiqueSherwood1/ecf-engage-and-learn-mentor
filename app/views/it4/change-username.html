@@ -14,18 +14,21 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">Edit your preferred name - MA </h1>
+      <h1 class="govuk-heading-xl">Edit your name </h1>
 
-      <form class="form" action="/it4/home" method="post">
+      <form class="form" action="/it4/home-name" method="post">
 
         {{ govukInput({
-          label: {
-            text: "Preferred name"
-              },
-            classes: "govuk-!-width-two-thirds",
-            id: "username",
-            name: "username"
-        }) }}
+              label: {
+                text: "What is your preferred name?"
+                  },
+                  hint: {
+                    text: "For example, Jess rather than Jessica."
+                  },
+                classes: "govuk-!-width-two-thirds",
+                id: "username",
+                name: "username"
+            }) }}
 
 
         <button class="govuk-button" data-module="govuk-button">Save</button>

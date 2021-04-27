@@ -31,6 +31,16 @@ router.post('/it3/guidance-question-answer', function (req, res) {
   }
 })
 
+router.post('/it4/guidance-question-answer', function (req, res) {
+  const readGuidance = req.session.data['read-guidance']
+
+  if (readGuidance === "yes") {
+    res.redirect('/it4/guidance')
+  } else {
+    res.redirect('/it4/home')
+  }
+})
+
 // Add your routes here - above the module.exports line
 
 module.exports = router
