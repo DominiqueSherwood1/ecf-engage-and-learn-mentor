@@ -41,6 +41,20 @@ router.post('/it4/guidance-question-answer', function (req, res) {
   }
 })
 
+router.post('/dev/home', function(req, res) {
+  const email = req.session.data['email']
+
+  if (email === "error") {
+    res.redirect('/dev/sign-in-error')
+  } else if (!email) {
+    res.redirect('/dev/sign-in-error-none')
+  } else if (email === "format") {
+    res.redirect('/dev/sign-in-error-format')
+  } else {
+    res.redirect('/dev/home')
+  }
+})
+
 // Add your routes here - above the module.exports line
 
 module.exports = router
