@@ -41,7 +41,7 @@ router.post('/it4/guidance-question-answer', function (req, res) {
   }
 })
 
-router.post('/dev/home', function(req, res) {
+router.post('/dev/cip', function(req, res) {
   const email = req.session.data['email']
 
   if (email === "error") {
@@ -51,7 +51,7 @@ router.post('/dev/home', function(req, res) {
   } else if (email === "format") {
     res.redirect('/dev/sign-in-error-format')
   } else {
-    res.redirect('/dev/home')
+    res.redirect('/dev/cip')
   }
 })
 
