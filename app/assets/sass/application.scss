@@ -151,6 +151,7 @@ $navigation-height: 50px;
 
 .custom-wrapper {padding-top: 0 !important;}
 
+
 .gem-c-pagination {
   display: block;
   margin: govuk-spacing(8) 0;
@@ -238,4 +239,11 @@ $navigation-height: 50px;
 .flex-wrapper {
   display: flex;
   align-items: flex-end;
+}
+
+.app-button--inverted, .app-button--inverted:link, .app-button--inverted:visited {
+    color: #1d70b8;
+    background-color: #fff;
+    -webkit-box-shadow: 0 2px 0 #144e81;
+    box-shadow: 0 2px 0 #144e81;
 }
