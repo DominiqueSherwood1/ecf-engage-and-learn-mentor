@@ -1,0 +1,159 @@
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/module-list">Your mentor materials</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/meetings-and-interactions">Autumn term:behaviour</a>
+    </li>
+  </ol>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <br>
+    <span class="govuk-caption-xl">Materials for you to use during your ECT catch-up</span>
+    <h1 class="govuk-heading-xl">
+      Week 3: instructions
+    </h1>
+
+    <!-- Session Overview -->
+
+    <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-2">Contents</p>
+
+    <ul class="govuk-list">
+      <li>
+        – <span>Select a development area</span>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/dev/ambition/mentor-wk6-pt2">Observe</a>
+      </li>
+    </ul>
+
+
+    <h2 class="govuk-heading-l">
+      Select a development area
+    </h2>
+
+    <p>Before you observe, first select a development area to focus on. Next, familiarise yourself with the focused development areas, as you will zoom in on one of these during your observation. Finally, craft a precise when you observe your teacher (some examples are provided below).</p>
+
+
+
+    <h3 class="govuk-heading-m">
+      Development area 1: Presence through posture
+    </h3>
+
+    <p><strong>Focused development area</strong></p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Teacher stands still when speaking to the class.</li>
+      <li>Teacher adopts a confident, composed and open posture.</li>
+      <li>Teacher gives instructions from the same spot in the classroom that allows for good visibility of the class.</li>
+    </ul>
+
+
+
+    <h3 class="govuk-heading-m">
+      Development area 2: Deliver clear instructions
+    </h3>
+
+    <p><strong>Focused development area</strong></p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Teacher delivers instructions that are
+    manageable and sequential.</li>
+      <li>Teacher delivers instructions that detail the
+    specific actions they need pupils to take.</li>
+      <li>Teacher checks pupils know what to do by having
+    them repeat the instructions.</li>
+    </ul>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          Example precise target for teacher delivers instructions that are manageable and sequential.
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <ul class="govuk-list govuk-list--bullet">
+          <li><strong>Not doing it at all:</strong> : Break down and deliver instructions in manageable steps. </li>
+          <li><strong>Doing it but needs some
+          improvement:</strong> Break down and deliver instructions in manageable steps that are ordered sequentially for pupils, e.g. by numbering each step. </li>
+          <li><strong>Doing it well, but needs some
+          stretch:</strong> Break down and deliver instructions in manageable steps that are ordered sequentially for pupils. Pause briefly between each step so pupils have time to take in each part of your instructions </li>
+        </ul>  </div>
+    </details>
+
+
+    <h3 class="govuk-heading-m">
+      Development area 3: Presence through voice
+    </h3>
+
+    <p><strong>Focused development area</strong></p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>Teacher is using the appropriate register and
+    pace to match the content of the instructions.</li>
+      <li>Teacher maintains control of their emotions,
+    speaking at the appropriate volume and with the
+    appropriate tone. </li>
+    </ul>
+
+
+
+
+
+    
+<nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="gem-c-pagination__list" data-module="track-click">
+    <li class="gem-c-pagination__item gem-c-pagination__item--next">
+      <a href="/dev/ambition/mentor-wk6-pt2" class="gem-c-pagination__link" rel="next">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+            <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Next
+          </span>
+        </span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">Observe</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+    {% endblock %}
