@@ -1,0 +1,139 @@
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/module-list">Your mentor materials</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/meetings-and-interactions">Autumn term:behaviour</a>
+    </li>
+  </ol>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <br>
+    <span class="govuk-caption-xl">The teacher's self-study materials</span>
+    <h1 class="govuk-heading-xl">
+      Week 2: Routines
+    </h1>
+
+    <!-- Session Overview -->
+
+    <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-2">Contents</p>
+
+    <ul class="govuk-list">
+      <li>
+        – <span>Observation</span>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/dev/ambition/mentor-wk3-pt2">Development areas and focused development areas</a>
+      </li>
+    </ul>
+
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+    <h2 class="govuk-heading-l">
+      Observation
+    </h2>
+
+    <h3 class="govuk-heading-m">
+      Before you observe
+    </h3>
+
+    <p>1. Select a <a href="/dev/ambition/mentor-wk3-pt2">development area</a> to focus on</p>
+
+    <p>2. Familiarise youself with the focused development area</p>
+
+    <h3 class="govuk-heading-m">
+      During the observation
+    </h3>
+
+    <p>1. Consider the following questions based on a short (approximately 15 minute) observation of your teacher:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>What was your teacher’s <strong>previous target</strong>? Are they meeting it? How do you know?</li>
+      <li>For the <strong>development area</strong> you are focussing on for this observation, what is your teacher already doing well?</li>
+      </ul>
+
+<p>2. Next, select a <a href="/dev/ambition/mentor-wk3-pt2">FOCUSED DEVELOPMENT AREA</a> to further zoom in on. Then select
+<a href="/dev/ambition/mentor-wk3-pt2">(from the examples)</a>or write one PRECISE TARGET (bite-sized action) to coach your teacher on. You can choose to
+stick with the previous target if your teacher have not made enough progress yet</p>
+
+<p>How will you model the target to your teacher to show them what good looks like?</p>
+
+<p>What questions will you ask to check your teacher understands the model? For example, ‘How it is different from your current
+practice?’, ‘What impact might it have on your practice and pupils?’, ‘What links can you see between the model
+and the module principles (below)?’</p>
+
+  <p>Reminder: Your model should help your teacher develop their ability in some of the following:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Explicitly teach routines and behavioural expectations.</li>
+    <li>Model routines and behavioural expectations.</li>
+    <li>Practise routines with their pupils.</li>
+    <li>Give manageable, specific and sequential instructions.</li>
+    <li>Use consistent language and non-verbal signals for common classroom directions.</li>
+    <li>Create a positive and motivating climate in the classroom. </li>
+    </ul>
+
+    <h3 class="govuk-heading-m">
+      After the observation
+    </h3>
+
+    <p>Next, meet with your teacher to work through the ‘Feedback’ stage of instructional coaching. See the guidance on the
+feedback stage in the appendices of the Mentor Handbook for support.</p>
+
+
+<nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+  <ul class="gem-c-pagination__list" data-module="track-click">
+    <li class="gem-c-pagination__item gem-c-pagination__item--next">
+      <a href="/dev/ambition/mentor-wk3-pt2" class="gem-c-pagination__link" rel="next">
+        <span class="gem-c-pagination__link-title">
+          <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+            <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+          </svg>
+          <span class="gem-c-pagination__link-text">
+            Next
+          </span>
+        </span>
+        <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+        <span class="gem-c-pagination__link-label">Development areas and focused development areas</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+    {% endblock %}

@@ -1,0 +1,135 @@
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ucl/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ucl/module-list">Your mentor materials</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ucl/meetings-and-interactions">Autumn first half term - enabling pupil learning</a>
+    </li>
+  </ol>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <br>
+    <span class="govuk-caption-xl">Materials for you to use during your ECT catch-up</span>
+    <h1 class="govuk-heading-xl">
+      Week 1:  module audit
+    </h1>
+
+    <!-- Session Overview -->
+
+    <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-2">Contents</p>
+
+    <ul class="govuk-list">
+      <li>
+        – <a class="govuk-link" href="/dev/ucl/mentor-wk1-pt1">Learning intentions</a>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/dev/ucl/mentor-wk1-pt2">Topic introduction</a>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/dev/ucl/mentor-wk1-pt3">Research and practice summary</a>
+      </li>
+      <li>
+        – <span>Meeting activities</span>
+      </li>
+    </ul>
+
+
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+<h2 class="govuk-heading-l">
+  Meeting activities
+</h2>
+
+<h3 class="govuk-heading-m">
+  Review: 15 minutes
+</h3>
+
+<p>Possible topics for discussion are:</p>
+
+
+  <ul class="govuk-list govuk-list--bullet">
+  <li>where and when will weekly sessions happen? This includes your mentee’s self-directed study as well as your mentor meetings.</li>
+  <li>how will you keep these sessions separate from statutory NQT induction activities, bearing in mind that the Early Career Framework is a support framework and not an assessment framework?</li>
+  <li>how will you work together in sessions? What are your preferred ways of working? What do you each find most enjoyable/challenging, for example?</li>
+  <li>how will you resolve any difficulties that arise over the year?</li>
+  <li>what are you each most looking forward to about working together on this programme?</li>
+  <li>will your mentee keep a record of the meetings and, if so, how? You may want to consider using a Learning Log, as outlined in the programme handbook</li>
+  </ul>
+
+  <h3 class="govuk-heading-m">
+    Plan and Theory to Practice: 40 mins
+  </h3>
+
+<p>Ask your mentee to work through the <a href="https://www.early-career-framework.education.gov.uk/ucl/wp-content/uploads/sites/5/2020/09/01_Module-1-Audit.pdf">Module 1 audit</a> and to self-assess against each criterion. They should base their judgement on their current knowledge
+and/or practice. Some suggested definitions to support this assessment are offered below. All should be interpreted in relation to the mentee’s context and what can reasonably be expected of an early-career teacher who has just
+completed initial teacher education.</p>
+
+<p><strong>Emerging:</strong> I don’t feel very confident in this area. I have substantial gaps in my knowledge and/or practice which definitely need to be addressed.</p>
+
+<p><strong>Developing:</strong> I have some knowledge about this, and/or there is evidence in my practice that I do this some of the time or to some extent. I am in a position to build on this with further work in this area.</p>
+
+<p><strong>Secure:</strong> I know a lot about this, and/or I do it in my practice consistently and well.</p>
+
+<p>more content under here</p>
+
+
+          <nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+            <ul class="gem-c-pagination__list" data-module="track-click">
+              <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+                <a href="/dev/ucl/mentor-wk1-pt3" class="gem-c-pagination__link" rel="next">
+                  <span class="gem-c-pagination__link-title">
+                    <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                      <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+                    </svg>
+                    <span class="gem-c-pagination__link-text">
+                      Previous
+                    </span>
+                  </span>
+                  <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+                  <span class="gem-c-pagination__link-label">Research and practice summary</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    {% endblock %}

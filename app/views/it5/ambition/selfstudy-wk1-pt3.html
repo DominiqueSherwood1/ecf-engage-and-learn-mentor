@@ -1,0 +1,124 @@
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/module-list">Your mentor materials</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/meetings-and-interactions">Autumn term:behaviour</a>
+    </li>
+  </ol>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <br>
+    <span class="govuk-caption-xl">The ECT's self-study materials</span>
+    <h1 class="govuk-heading-xl">
+      Week 1:Strand overview and contracting
+    </h1>
+
+    <!-- Session Overview -->
+    <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-2">Contents</p>
+
+    <ul class="govuk-list">
+      <li>
+        – <a class="govuk-link" href="/ambition/ambition/selfstudy-wk1-pt1">Video and strand introduction</a>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/dev/ambition/selfstudy-wk1-pt2">Strand overview</a>
+      </li>
+      <li>
+        – <span>Reflect</span>
+      </li>
+    </ul>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+    <h2 class="govuk-heading-l">
+      Reflect
+    </h2>
+
+    <h3 class="govuk-heading-m">
+      Reminder of key takeaways
+    </h3>
+
+    <p>Ms Foden can promote positive pupil behaviour and an effective learning environment by understanding that:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        Holding high expectations, creating an effective learning environment and managing behaviour effectively all positively impact pupil learning outcomes.</li>
+      <li>
+        Creating an effective learning environment over time can also have benefits for classroom relationships, pupil attitudes to learning, pupil wellbeing and wider outcomes and wider school culture.</li>
+        <li>Teachers can create effective learning environments through proactive, reactive and escalation strategies.</li>
+        <li>Teachers can foster further effective learning behaviours through developing behaviours that help pupils to learn more successfully.</li>
+        <li>Teacher expectations play an important (yet complex) role in influencing pupil behaviour and learning.</li>
+        <li>Balancing the challenge and support that teachers provide in order that pupils experience success is key.</li>
+    </ul>
+
+    <h3 class="govuk-heading-m">
+      Reflect on the following questions
+    </h3>
+
+    <ul class="govuk-list govuk-list--number">
+      <li>
+        What did you see in this module that you already do or have seen in other classrooms?</li>
+      <li>
+        What do you feel is the gap between your current practice and what you have seen in this module?</li>
+        <li>Which of the ‘key takeaways’ do you need to focus on? Where and when might you try to apply them to your teaching?</li>
+    </ul>
+
+
+    <nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+      <ul class="gem-c-pagination__list" data-module="track-click">
+        <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+          <a href="/dev/ambition/selfstudy-wk1-pt2" class="gem-c-pagination__link" rel="next">
+            <span class="gem-c-pagination__link-title">
+              <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+              </svg>
+              <span class="gem-c-pagination__link-text">
+                Previous
+              </span>
+            </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">Strand overview</span>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}

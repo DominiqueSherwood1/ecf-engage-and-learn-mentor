@@ -41,6 +41,16 @@ router.post('/it4/guidance-question-answer', function (req, res) {
   }
 })
 
+router.post('/dev/ambition/guidance-question-answer', function (req, res) {
+  const readGuidance = req.session.data['read-guidance']
+
+  if (readGuidance === "yes") {
+    res.redirect('/dev/ambition/guidance')
+  } else {
+    res.redirect('/dev/ambition/module-list')
+  }
+})
+
 router.post('/dev/cip', function(req, res) {
   const email = req.session.data['email']
 

@@ -1,0 +1,125 @@
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/module-list">Your mentor materials</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/meetings-and-interactions">Autumn term:behaviour</a>
+    </li>
+  </ol>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <br>
+    <span class="govuk-caption-xl">The teacher's self-study materials</span>
+    <h1 class="govuk-heading-xl">
+      Week 1: Strand overview and contracting
+    </h1>
+
+    <!-- Session Overview -->
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+    <p>Meet with your teacher and use the following prompts as the basis for a coaching contracting discussion.
+      Contracting is most effective when both parties (yourself and the ECT) answer questions for each other. </p>
+
+    <h2 class="govuk-heading-l">
+      Contracting meeting
+    </h2>
+
+    <h3 class="govuk-heading-m">
+      1. Professional prompts
+    </h3>
+
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        What is important to you in your work?</li>
+      <li>
+        What do you want to get out of this process?</li>
+      <li>
+        What do you need from me to make this work well?</li>
+    </ul>
+
+
+
+    <h3 class="govuk-heading-m">
+      2. Procedural prompts
+    </h3>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        What is the best way for us to communicate and when?</li>
+      <li>
+        When are the best times to meet for our mentor sessions?</li>
+      <li>
+        What classes/subjects are best to observe?</li>
+    </ul>
+
+
+    <h3 class="govuk-heading-m">
+      3. Psychological prompts
+    </h3>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        What does an effective professional relationship look like for you? Can you give me an example?</li>
+      <li>
+        What experience have you had of observation? How can we make observation an effective experience?</li>
+      <li>
+        What experiences do you have of coaching? What might we need to do to embrace this coaching approach?</li>
+    </ul>
+
+
+      <h2 class="govuk-heading-l">
+        Context-specific meeting
+      </h2>
+      <p>In addition to contracting, as required, you may wish to
+        meet with your teacher to work through any contextspecific policies, systems and/or procedures that they
+        will need to know about to be effective in their role. It is
+        also important for teachers to be made aware of schoolspecific policies so you may wish to point your NQT to
+        these and provide some time to discuss them. </p>
+      <p>Typical school policies include, but are not limited to:</p>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Their responsibilities planning.</li>
+        <li>The school’s behaviour policy.</li>
+          <li>The safeguarding procedures.</li>
+          <li>How your school assesses pupils.</li>
+          <li>Your marking requirements.</li>
+      </ul>
+
+
+
+
+
+
+
+
+
+    {% endblock %}

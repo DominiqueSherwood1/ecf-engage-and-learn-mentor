@@ -1,0 +1,241 @@
+{% extends "layout.html" %}
+{% from "govuk/components/back-link/macro.njk" import govukBackLink %}
+{% from "govuk/components/checkboxes/macro.njk" import govukCheckboxes %}
+{% from "govuk/components/button/macro.njk" import govukButton %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+{% block navigation %}
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/home">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/module-list">Your mentor materials</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/meetings-and-interactions">Autumn term:behaviour</a>
+    </li>
+  </ol>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <br>
+
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <br>
+    <span class="govuk-caption-xl">The ECT's self-study materials</span>
+    <h1 class="govuk-heading-xl">
+      Week 1:Strand overview and contracting
+    </h1>
+
+    <!-- Session Overview -->
+    <p class="govuk-body govuk-!-font-size-19 govuk-!-margin-bottom-2">Contents</p>
+
+    <ul class="govuk-list">
+      <li>
+        – <a class="govuk-link" href="/dev/ambition/selfstudy-wk1-pt1">Video and strand introduction</a>
+      </li>
+      <li>
+        – <span>Strand overview</span>
+      </li>
+      <li>
+        – <a class="govuk-link" href="/dev/ambition/selfstudy-wk1-pt3">Reflect</a>
+      </li>
+    </ul>
+
+    <hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+
+
+    <h2 class="govuk-heading-l">
+      Strand overview
+    </h2>
+
+    <h3 class="govuk-heading-m">
+      Teaching challenge
+    </h3>
+
+    <p>Ms Foden is starting a new year at school. She wants to create an effective learning environment for all of her pupils but worries that she may find it difficult to get some pupils to listen, work independently, or show sufficient respect in the classroom. What does an effective learning environment look like, and where should she start in building one?</p>
+
+    <h3 class="govuk-heading-m">Key idea</h3>
+
+    <p>Creating a predictable and secure classroom environment, managing pupil behaviour and holding high expectations all contribute to more successful learning.</p>
+
+    <h3 class="govuk-heading-m">Evidence summary</h3>
+
+    <h4 class="govuk-heading-s">The classroom environment and pupil learning</h4>
+
+    <p>Effective teaching entails improving pupil achievement, in terms of both academic outcomes as well as other outcomes that matter to their future and success (Coe et al., 2014). Improving pupil achievement means generating a lasting change to pupils’ capabilities or understanding. Pupil behaviour, the learning environment and how teachers manage these, all play a critical role in improving pupil learning.</p>
+
+    <p>The learning environment or classroom ‘climate’ is a result of multiple factors, such as (Coe et al., 2014):</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        Teacher expectations.</li>
+      <li>
+        The relationships between teachers and pupils.</li>
+      <li>
+        How the teacher manages the classroom.</li>
+    </ul>
+
+    <p>There is strong evidence that certain teaching approaches lead to better pupil behaviour and create a more effective learning environment (IES, 2008).</p>
+
+    <p>The most effective learning environments are those that are predictable and secure, where pupils are responsive to the teacher (IES, 2008), and where pupils feel a sense of connection to their school, peers and teachers. Such classroom environments also contribute to a positive school culture (Chapman et al., 2013). Classroom environments like these are good for all pupils, but particularly those with special educational needs (Carroll et al., 2017).</p>
+
+    <p>In general, pupils are more alike than different in terms of how they think and learn (Willingham, 2009), so common approaches are likely to be effective in improving pupil behaviour. But this must be balanced with the need to match teaching and classroom management to individual pupil needs (IES, 2008). Providing additional support can be particularly beneficial to pupils with specific barriers to learning (Carroll et al., 2017).</p>
+
+    <p>In addition to improving pupil behaviour, over time effective learning environments can produce a range of important benefits, including:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <strong>Pupil-teacher relationships:</strong> Positive relationships and pupil perceptions of their teacher are based on repeated interactions over time (Wubbels et al., 2014). Being responsive to pupil needs, including considering and seeking to understand their feelings, can help build strong teacher-pupil relationships.</li>
+      <li>
+        <strong>Pupil attitudes to learning:</strong> Pupil perceptions of school are shaped by teacher-pupil interactions and the goals, values and behaviours of classmates (Rathmann et al., 2018).</li>
+      <li>
+        <strong>Pupil wellbeing:</strong> Pupils who perceive that their teachers are in control of the class and are able to include them in activities are also more likely to feel satisfied in life and have better school outcomes (Rathmann et al., 2018).</li>
+      <li><strong>Wider outcomes:</strong> In addition to generating high academic outcomes for pupils, effective environments can also improve wider outcomes such as university entrance and graduation rates, higher wages, and lower chances of becoming pregnant as a teenager (Chetty et al., 2014).
+      </li>
+    </ul>
+
+    <h4 class="govuk-heading-s">Effective behaviour management</h4>
+
+    <p>Part of creating an effective learning environment entails managing pupil behaviour. Effective behaviour management happens best when teachers anticipate challenging pupil behaviours and modify the classroom environment to prevent or mitigate them (IES, 2008). Behaviour management strategies typically fall into one of three categories:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <strong>Proactive:</strong> Approaches for pre-empting and preventing problem behaviours before they occur. For example, using seating plans.</li>
+      <li>
+        <strong>Reactive:</strong>Strategies to deal effectively with classroom behaviours as they arise. For example, using rewards or sanctions.</li>
+      <li>
+        <strong>Escalation:</strong>Where proactive and reactive strategies are failing to work after a time, or where behaviour is extremely disruptive or dangerous, teachers should follow the school behaviour policy and/or discuss with their mentor what further support can be put in place. For example, calling parents, setting detentions or sending pupils out of the class after a certain number of sanctions.
+      </li>
+    </ul>
+
+    <p>Part of effective behaviour management involves setting clear rules and consistently reinforcing them (Coe et al., 2014; IES, 2008). The goal of these rules should be to create an environment where pupils are routinely successful (Coe et al., 2014). In the first half of the Behaviour strand we explore a series of teacher approaches that establish an effective learning environment with good pupil behaviour. Evidence suggests that there are several specific ideas and practices that teachers can use to build an effective learning environment and manage pupil behaviour. These include:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <strong>Time on task:</strong>While pupil behaviour is not a perfect indicator of whether pupils are learning (Coe, 2013), there is a significant relationship between the amount of time pupils spend on task and how much they learn (Muijs & Reynolds, 2010).</li>
+      <li>
+        <strong>Peer effects:</strong>Pupil behaviour is influenced by that of their peers (IES, 2008). The more that individual pupils adopt on-task behaviours, the more likely it is that other pupils will follow them.</li>
+      <li>
+        <strong>Positive reinforcement:</strong>Positive reinforcement can create an effective learning environment. Positive reinforcement entails providing acknowledgement, praise and rewards for positive behaviours. However, teachers must be careful not to overuse praise, as this can inadvertently communicate low expectations (Coe et al., 2014). To avoid this, teachers can use ‘acknowledgement’ when expectations are merely met and reserve ‘praise’ for when they are exceeded. Sanctions for negative behaviours can also be used alongside positive reinforcement. Providing more praise than reprimand has been found to be most effective (IES, 2008).
+      </li>
+      <li><strong>Pupil success:</strong>	Ensuring a high pupil success rate is a powerful way to foster pupil behaviour and learning (Rosenshine, 2012). How Ms Foden communicates her expectations of pupil success can influence what they do and achieve. For example, if she inadvertently communicates low expectations of success, pupils can start to think that they can’t do it (Tsiplakides & Keramida, 2010) and reduce the amount of effort they put in (Gutman & Schoon, 2013). Conversely, pupils’ prior experiences of success at a specific, appropriately challenging task makes it more likely they will be motivated to persist at similar tasks in the future; this also makes it more likely they will be successful at such tasks (Gutman & Schoon, 2013). Ms Foden should balance challenge with high success rate (Rosenshine, 2012)
+      </li>
+      <li><strong>Motivation:</strong>Pupil motivation can be intrinsic (driven by the task itself) or extrinsic (driven by rewards and sanctions). Pupils who are motivated intrinsically are more likely to stay on task longer and persist when learning gets challenging (Lazowski & Hulleman, 2016). Over time, Ms Foden should aim to reduce extrinsic motivators and increase pupil intrinsic motivation. For example, helping pupils to master challenging content, and make links between their long-term goals and the work they are doing in school, can help pupils to journey from needing extrinsic motivation to being motivated to work intrinsically. Building effective relationships with parents, carers and families can improve pupils’ motivation, as well as pupil behaviour and academic success (EEF, 2018). Ms Foden should use opportunities like parents evening to communicate proactively and engage parents and carers in their children’s schooling.</li>
+      <li><strong>Self-regulation:</strong>	Self-regulation – the ability to steer our own behaviour and learning – is a strong predictor of attainment and future success. A key aspect of this is emotional regulation (Gutman & Schoon, 2013). This is important because negative pupil emotions can lead to pupils avoiding a task (Kluger & DeNisi 1996) and also because the ability to regulate one’s emotions affects pupils’ ability to learn, success in school and future life (EEF, 2017). Effective self-regulation also requires pupils to develop metacognitive strategies – how they plan, monitor and evaluate their approaches to specific tasks. Teacher support for pupil metacognition is likely to increase pupil self-regulation, success and therefore motivation (EEF, 2017).
+      </li>
+    </ul>
+
+    <h4 class="govuk-heading-s">Behaviour that fosters effective learning</h4>
+
+    <p>In the second half of the Behaviour strand, we will explore ways that teachers can foster effective learning. This part of the strand has lots of connections with the Instruction strand. Evidence suggests that there are several specific ideas and practices that teachers can use to generate behaviours that further foster effective learning in the classroom. These include:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <strong>Guided instruction:</strong>Pupils learn best when they build on what they already know, and when teachers guide them clearly and directly towards what they need to know – an approach sometimes referred to as ‘explicit instruction’ (Coe et al., 2014). This is in contrast to less guided instruction, where pupils are left to ‘join the dots’ or discover things themselves. Once a teacher has established their classroom expectations, maintaining good pupil behaviour while adding to their teaching repertoire requires effective instruction. There are links with the Instruction strand later in behaviour.</li>
+      <li>
+        <strong>Practice:</strong>Getting pupils to think about and practise expected behaviours, by guiding them and reinforcing desirable behaviours, can foster positive changes in pupil behaviour change over time (IES, 2008). Guided practice can develop pupil metacognition linked to specific tasks, and practice can also develop pupils’ capacity to self-regulate their emotions, which can support pupils to be more successful and independent over time (EEF, 2017).</li>
+    </ul>
+
+    <p>Holding high expectations is one particularly important yet hard-to-pin-down part of creating an effective learning environment. When we talk about teacher expectations we mean: the beliefs that teachers hold and the messages that they communicate regarding what their pupils are capable of, both in terms of behaviour and learning. In turn, this influences the levels of classroom challenge and support that teachers provide (Coe et al., 2014). Inadvertently communicating low expectations can lead to a ‘self-fulfilling prophecy’, where pupils behave and learn in line with what the teacher expects rather than what they are capable of (Murdock-Perriera et al., 2018; Tsiplakides & Keramida, 2010).</p>
+
+    <h4 class="govuk-heading-s">Nuances and caveats</h4>
+
+    <p>Behaviour is only one piece of the effective teaching puzzle. Effective instruction and sound teacher subject knowledge are also critical (Coe et al., 2014). And perhaps most importantly, these different dimensions of effective teaching influence each other – it is only when they are aligned that effective teaching can flourish (IES, 2008).</p>
+
+    <p>So, while Ms Foden must work hard to develop her understanding and approach around behaviour, she must also recognise that this needs to go hand-in-hand with things like providing the right balance of challenge and support for helping her pupils to experience regular success in the classroom. It is little wonder that becoming a great teacher takes time and continued learning.</p>
+
+    <h3 class="govuk-heading-m">Key takeaways</h3>
+
+    <p>Ms Foden can promote positive pupil behaviour and an effective learning environment by understanding that:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        Holding high expectations, creating an effective learning environment and managing behaviour effectively all positively impact pupil learning outcomes.</li>
+      <li>
+        Creating an effective learning environment over time can also have benefits for classroom relationships, pupil attitudes to learning, pupil wellbeing and wider outcomes and wider school culture.</li>
+        <li>Teachers can create effective learning environments through proactive, reactive and escalation strategies.</li>
+        <li>Teachers can foster further effective learning behaviours through developing behaviours that help pupils to learn more successfully.</li>
+        <li>Teacher expectations play an important (yet complex) role in influencing pupil behaviour and learning.</li>
+        <li>Balancing the challenge and support that teachers provide in order that pupils experience success is key.</li>
+    </ul>
+
+    <details class="govuk-details govuk-!-margin-top-6" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          References
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+
+        <ul class="govuk-list govuk-list--spaced">
+
+          <li>Carroll, J., Bradley, L., Crawford, H., Hannant, P., Johnson, H., & Thompson, A. (2017). SEN support: A rapid evidence assessment. <a href="bit.ly/ecf-dfe">bit.ly/ecf-dfe </a></li>
+
+          <li>Carroll, J., Bradley, L., Crawford, H., Hannant, P., Johnson, H., & Thompson, A. (2017). SEN support: A rapid evidence assessment. <a href="bit.ly/ecf-dfe">bit.ly/ecf-dfe </a></li>
+
+          <li>more to add</li>
+
+          </ul>
+
+      </div>
+
+    </details>
+
+
+    <nav class="gem-c-pagination" role="navigation" aria-label="Pagination">
+      <ul class="gem-c-pagination__list" data-module="track-click">
+        <li class="gem-c-pagination__item gem-c-pagination__item--previous">
+          <a href="/dev/ambition/selfstudy-wk1-pt1" class="gem-c-pagination__link" rel="next">
+            <span class="gem-c-pagination__link-title">
+              <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+              </svg>
+              <span class="gem-c-pagination__link-text">
+                Previous
+              </span>
+            </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">Video and strand introduction</span>
+          </a>
+        </li>
+        <li class="gem-c-pagination__item gem-c-pagination__item--next">
+          <a href="/dev/ambition/selfstudy-wk1-pt3" class="gem-c-pagination__link" rel="next">
+            <span class="gem-c-pagination__link-title">
+              <svg class="gem-c-pagination__link-icon" xmlns="http://www.w3.org/2000/svg" height="13" width="17" viewBox="0 0 17 13">
+                <path d="m10.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+              </svg>
+              <span class="gem-c-pagination__link-text">
+                Next
+              </span>
+            </span>
+            <span class="gem-c-pagination__link-divider visually-hidden">:</span>
+            <span class="gem-c-pagination__link-label">Reflect</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
