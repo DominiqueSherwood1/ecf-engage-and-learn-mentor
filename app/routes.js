@@ -46,9 +46,11 @@ router.post('/dev/ambition/guidance-question-answer', function (req, res) {
 
   if (readGuidance === "yes") {
     res.redirect('/dev/ambition/guidance')
-  } else {
-    res.redirect('/dev/ambition/module-list')
-  }
+      } else if  (readGuidance === "no") {
+      res.redirect('/dev/ambition/module-list')
+    } else if  (!readGuidance) {
+    res.redirect('/dev/ambition/guidance-question-error')
+    }
 })
 
 router.post('/dev/cip', function(req, res) {
