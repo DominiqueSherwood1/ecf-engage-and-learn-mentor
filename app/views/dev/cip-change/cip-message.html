@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype Kit
+{% endblock %}
+
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/cip-change/home">Home</a>
+    </li>
+  </ol>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <br>
+
+    <h1 class="govuk-heading-xl">Your school’s training and support programme for ECTs has changed</h1>
+
+    <p>Your school has changed the training and support programme its ECTs are doing from [PROVIDER X] to [PROVIDER Y].</p>
+
+    <p>You can no longer access the mentor materials you were previously using.</p>
+
+    <p>Speak to your induction lead for more information.</p>
+
+    <a href="/dev/cip-change/module-list" class="govuk-button">Continue</a>
+
+  </div>
+</div>
+
+{% endblock %}
