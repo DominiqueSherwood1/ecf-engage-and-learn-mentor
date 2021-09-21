@@ -1,0 +1,81 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-breadcrumbs ">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/dev/ambition/home">Home</a>
+    </li>
+  </ol>
+</div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+  <h1 class="govuk-heading-xl govuk-!-margin-bottom-1">Your mentor materials</h1>
+
+  <br>
+
+  {% include "includes/year1-ambition.html" %}
+
+  <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h3 class="govuk-heading-m govuk-!-margin-top-6"><a href="/dev/ambition/meetings-and-interactions"> Autumn term: behaviour</a></h3>
+        </div>
+      </div>
+      <p>In this module your teacher will cover:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>how to establish an effective learning environment</li>
+        <li>how to effectively manage behaviour</li>
+        <li>the importance of holding and promoting high expectations for all pupils</li>
+      </ul>
+
+
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h3 class="govuk-heading-m govuk-!-margin-top-6"><a href="#"> Spring term: instruction</a></h3>
+        </div>
+      </div>
+
+      <p>In this module your teacher will cover:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the link between effective instruction and pupil learning</li>
+        <li>the elements of explicit instruction and the ‘I-we-you’ model as a useful way of approaching this</li>
+        <li>how instruction can support more effective pupil thinking</li>
+      </ul>
+
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-three-quarters">
+          <h3 class="govuk-heading-m govuk-heading-m govuk-!-margin-top-6""><a href="#"> Summer term: subject</a></h3>
+        </div>
+      </div>
+
+      <p>In this module your teacher will cover:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the curriculum</li>
+        <li>their mental model of the subject or phase they teach and its implications for their planning</li>
+        <li>how to know what pupils have understood, the barriers they face in doing so and how to respond to pupils' needs</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
