@@ -1,0 +1,31 @@
+{% extends "layout-signin.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-padding-top-9">Sign in</h1>
+
+      <form class="form" action="/other-users/home" method="post">
+
+        <div class="govuk-form-group">
+          <h3 class="govuk-heading-m ">Email address</h3>
+          <div id="email-hint" class="govuk-hint">
+            We need your email so we can sign you in
+          </div>
+          <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

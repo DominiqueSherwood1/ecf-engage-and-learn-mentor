@@ -1,0 +1,22 @@
+{% extends "layout-signin.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-padding-top-9">Account created</h1>
+
+      {{ govukButton({
+        text: "Continue to materials", href: "/other-users/home"
+      }) }}
+
+
+    </div>
+  </div>
+
+{% endblock %}

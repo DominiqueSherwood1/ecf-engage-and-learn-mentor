@@ -1,0 +1,37 @@
+{% extends "layout-signin.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-padding-top-9">Create an account</h1>
+
+      <div class="govuk-form-group">
+        <h3 class="govuk-heading-m ">Email address</h3>
+  <div id="email-hint" class="govuk-hint">
+    We need your email so we can sign you in
+  </div>
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+
+<div class="govuk-form-group">
+<h3 class="govuk-heading-m">Organisation</h3>
+<div id="email-hint" class="govuk-hint">
+Please tell us the organisation where you work
+</div>
+<input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+</div>
+
+{{ govukButton({
+  text: "Continue", href: "/other-users/email-sent"
+}) }}
+
+    </div>
+  </div>
+
+{% endblock %}
