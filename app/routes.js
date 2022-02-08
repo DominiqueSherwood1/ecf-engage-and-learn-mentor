@@ -67,6 +67,16 @@ router.post('/dev/cip', function(req, res) {
   }
 })
 
+router.post('/other-users/home', function(req, res) {
+  const email = req.session.data['email']
+
+  if (email === "not-recognised@error.com") {
+    res.redirect('/other-users/sign-in-error')
+  } else {
+    res.redirect('/other-users/home')
+  }
+})
+
 // Add your routes here - above the module.exports line
 
 module.exports = router
