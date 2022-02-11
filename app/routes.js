@@ -77,6 +77,16 @@ router.post('/other-users/home', function(req, res) {
   }
 })
 
+router.post('/other-users/email-sent', function(req, res) {
+  const create = req.session.data['create']
+
+  if (create === "recognised@error.com") {
+    res.redirect('/other-users/create-account-error')
+  } else {
+    res.redirect('/other-users/email-sent')
+  }
+})
+
 // Add your routes here - above the module.exports line
 
 module.exports = router

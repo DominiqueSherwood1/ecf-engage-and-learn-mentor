@@ -1,37 +1,31 @@
 {% extends "layout-signin.html" %}
 
 {% block pageTitle %}
-  GOV.UK Prototype Kit
+  Question page
 {% endblock %}
 
 {% block content %}
 
 <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl govuk-!-padding-top-9">Create an account</h1>
+    <h1 class="govuk-heading-xl govuk-!-padding-top-9">Create an account</h1>
+
+    <form class="form" action="/other-users/email-sent" method="post">
 
       <div class="govuk-form-group">
         <h3 class="govuk-heading-m ">Email address</h3>
-  <div id="email-hint" class="govuk-hint">
-    We need your email so we can sign you in
+        <div id="email-hint" class="govuk-hint">
+          We need your email to create an account
+        </div>
+        <input class="govuk-input" id="create" name="create" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+      </div>
+
+      <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+    </form>
+
   </div>
-  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
 </div>
-
-<div class="govuk-form-group">
-<h3 class="govuk-heading-m">Organisation</h3>
-<div id="email-hint" class="govuk-hint">
-Please tell us the organisation where you work
-</div>
-<input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
-</div>
-
-{{ govukButton({
-  text: "Continue", href: "/other-users/email-sent"
-}) }}
-
-    </div>
-  </div>
 
 {% endblock %}
